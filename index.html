@@ -12,37 +12,86 @@
             padding: 0;
             box-sizing: border-box;
         }
-        .titulo {
-            color: red;
-            background-color: aqua;
-            margin: 50px 20px;
-            padding: 20px 50px 100px 150px;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
         }
+
+        h1,h2,h3{
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem ;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .cabecalhoprincipal {
+            background-color: #ffffff;
+            padding: 1.5rem 5%;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .titulo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d32f2f;
+            line-height: 1.6;
+        }
+
+        .listanavegacao {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .linknav {
+            font-weight: 500;
+            transition:  color 0.3s ease;
+        }
+
+        .linknav:hover{
+            color: #d32f2f;
+        }
+
+
     </style>
 </head>
 
 <body>
     <!--cabeçalho-->
-    <header>
+    <header id="header" class="cabecalhoprincipal">
         <div id="logo">
-            <h1 class="titulo" style="color: blue;">compasso musical</h1>
+            <h1 class="titulo">compasso musical</h1>
         </div>
         <nav>
-            <ul>
+            <ul class="listanavegacao">
                 <li>
-                    <a href="#hero">Inicio</a>
+                    <a href="#hero" class="linknav">Inicio</a>
                 </li>
                 <li>
-                    <a href="#sobre">Sobre</a>
+                    <a href="#sobre" class="linknav">Sobre</a>
                 </li>
                 <li>
-                    <a href="#instrumentos">Instrumentos</a>
+                    <a href="#instrumentos" class="linknav">Instrumentos</a>
                 </li>
                 <li>
-                    <a href="#Depoimentos">Depoimentos</a>
+                    <a href="#Depoimentos" class="linknav">Depoimentos</a>
                 </li>
                 <li>
-                    <a href="#Contato">Contato</a>
+                    <a href="#Contato" class="linknav">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -181,19 +230,19 @@
             <h3>mapa do site</h3>
             <ul>
                 <li>
-                    <a href="#hero">Inicio</a>
+                    <a href="#hero" class="linknav">Inicio</a>
                 </li>
                 <li>
-                    <a href="#sobre">Sobre</a>
+                    <a href="#sobre" class="linknav">Sobre</a>
                 </li>
                 <li>
-                    <a href="#instrumentos">Instrumentos</a>
+                    <a href="#instrumentos" class="linknav">Instrumentos</a>
                 </li>
                 <li>
-                    <a href="#Depoimentos">Depoimentos</a>
+                    <a href="#Depoimentos" class="linknav">Depoimentos</a>
                 </li>
                 <li>
-                    <a href="#Contato">Contato</a>
+                    <a href="#Contato" class="linknav">Contato</a>
                 </li>
             </ul>
         </nav>
