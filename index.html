@@ -66,13 +66,28 @@
             color: #d32f2f;
         }
 
+        .botaoPrincipal {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .botaoPrincipal:hover {
+            background-color: #b71c1c;
+            color: #ffffff;
+        }
 
     </style>
 </head>
 
 <body>
     <!--cabeçalho-->
-    <header id="header" class="cabecalhoprincipal">
+    <header id="header" class="cabecalhoPrincipal">
         <div id="logo">
             <h1 class="titulo">compasso musical</h1>
         </div>
@@ -99,15 +114,17 @@
 
     <!--conteudo principal-->
     <main>
-        <section id="hero">
-            <h2>o som da sua vida começa aqui</h2>
-            <p>
+        <section id="hero" class="secaoHero" style="background-color: #eceff1; text-align: center; padding: 5rem 2rem; border-bottom: 4px solid #d32f2f;">
+            <h2 style="font-size: 3rem; color:#1a1a1a;">o som da sua vida começa aqui</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto">
                 encontre as melhores marcas de violinos,trompetes ou violões
             </p>
             <img src="banda de rock.jpg"
-                alt="banda de rock  em um show usando os instrumentos musical da compasso musical" width="600">
+                alt="banda de rock  em um show usando os instrumentos musical da compasso musical" width="600"
+                style="border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3)"
+                />
             <br><br>
-           <a href="">ver as nossas ofertas</a>
+           <a href="#" class="botaoPrincipal">ver as nossas ofertas</a>
         </section>
 
         <!--seção sobre-->
