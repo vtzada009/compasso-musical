@@ -93,6 +93,33 @@
             font-size: 2.5rem;
             margin-bottom: 2rem;
             }
+            
+            .gradeInstrumentos {
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .cartaoInstrumento {
+                background-color: #ffffff;
+                border-radius: 8px;
+                padding: 1.5rem;
+                width: 300px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+
+            .cartaoInstrumento:hover {
+                transform: translate(-5px)
+            }
+
+            .nomeIstrumento {
+                color: #333333;
+
+            }
+            
     </style>
 </head>
 
@@ -155,39 +182,44 @@
         </section>
 
         <!--instrumentos-->
-        <section id="instrumentos">
-            <h2>cátalogo</h2>
-            <article>
-                <h3>guitarra eletrica stratocaster</h3>
-                <img src="https://images.unsplash.com/photo-1699716051078-eb299c55cc72"
-                    alt="imagem guitarra eletrica estratocaster" width="300">
-                <p>
-                    <strong>marca: </strong>Fender
-                </p>
-                <p>
-                    guitarra clássica de alta performace ideal para rock blues.
-                </p>
-                <p>
-                    <em>Preço: R$ 3.500,00</em>
-                </p>
-                <a href="#">Adicionar ao carrinho</a>
-            </article>
+        <section id="instrumentos" class="container" style="background-color: #eeeeee;">
+            <h2 class="titulosecao">cátalogo de Instrumentos</h2>
+            <div class="gradeInstrumentos">
+                <article class="cartaoInstrumento">
+                    <h3 class="nomeIstrumento">guitarra eletrica stratocaster</h3>
+                    <img src="https://images.unsplash.com/photo-1699716051078-eb299c55cc72"
+                        alt="imagem guitarra eletrica estratocaster" width="200"
+                        style="border-radius: 4px; margin-bottom: 1rem;">
+                    <p>
+                        <strong>marca: </strong>Fender
+                    </p>
+                    <p>
+                        guitarra clássica de alta performace ideal para rock blues.
+                    </p>
+                    <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+                        <em>Preço: R$ 3.500,00</em>
+                    </p>
+                    <a href="#" class="botaoPrincipal">Adicionar ao carrinho</a>
+                </article>
+    
+                <article class="cartaoInstrumento">
+                    <h3 class="nomeIstrumento">kit bateria</h3>
+                    <img src="https://images.unsplash.com/photo-1568153354382-6bcd1d46568b"
+                        alt="imagem de uma bateria musical" width="200"
+                         style="border-radius: 4px; margin-bottom: 1rem;">
+                    <p>
+                        <strong>marca: </strong>Pearl
+                    </p>
+                    <p>
+                        kit bateria roxo ideal para voce
+                    </p>
+                    <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+                        <em>Preço: R$ 23.500,00</em>
+                    </p>
+                    <a href="#" class="botaoPrincipal">Adicionar ao carrinho</a>
+                </article>
 
-            <article>
-                <h3>kit bateria</h3>
-                <img src="https://images.unsplash.com/photo-1568153354382-6bcd1d46568b"
-                    alt="imagem de uma bateria musical" width="300">
-                <p>
-                    <strong>marca: </strong>Pearl
-                </p>
-                <p>
-                    kit bateria roxo ideal para voce
-                </p>
-                <p>
-                    <em>Preço: R$ 23.500,00</em>
-                </p>
-                <a href="#">Adicionar ao carrinho</a>
-            </article>
+            </div>
         </section>
 
         <!--depoimentos-->
