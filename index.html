@@ -119,6 +119,21 @@
                 color: #333333;
 
             }
+
+            .rodape  {
+                background-color: #1a1a1a;
+                color: #ffffff;
+                padding: 3rem 5%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+
+            .rodape h2,
+            .rodape h3 {
+                color: #ffffff;
+            }
             
     </style>
 </head>
@@ -162,7 +177,7 @@
                 style="border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3)"
                 />
             <br><br>
-           <a href="#" class="botaoPrincipal">ver as nossas ofertas</a>
+            <a href="#" class="botaoPrincipal">ver as nossas ofertas</a>
         </section>
 
         <!--seção sobre-->
@@ -206,7 +221,7 @@
                     <h3 class="nomeIstrumento">kit bateria</h3>
                     <img src="https://images.unsplash.com/photo-1568153354382-6bcd1d46568b"
                         alt="imagem de uma bateria musical" width="200"
-                         style="border-radius: 4px; margin-bottom: 1rem;">
+                        style="border-radius: 4px; margin-bottom: 1rem;">
                     <p>
                         <strong>marca: </strong>Pearl
                     </p>
@@ -225,7 +240,7 @@
         <!--depoimentos-->
         <section id="Depoimentos" class="container">
             <h2 class="titulosecao">O que nossos clientes dizem</h2>
-            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: ;">
+            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: warap;">
                 <blockquote style="background: #ffffff; padding: 2rem; border-left: 5px solid #d32f2f; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); max-width: 400px;">
                     <p style="font-style: italic;">
                         "A bateria chegou super rapido em cuiaba e perfeitamente embalada.O som e incrivel!"
@@ -247,53 +262,48 @@
             </div>
         </section>
         <!--secão contato-->
-        <section id="Contato">
-            <h2>fale conosco</h2>
-            <p>
-                tem duvidas sobre algum instrumento? mande uma mensagem ou venha nos visitar.
-            </p>
-            <address>
-                <p>
-                    Loja fiica: <strong>Centro Historico,Cuiaba-MT</strong>
+        <section id="Contato" class="container" style="background-color: #eceff1;">
+            <h2 class="titulosecao">Fale conosco</h2>
+            <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);">
+                <p style="text-align: center; margin-bottom: 2rem;">
+                    tem duvidas sobre algum instrumento? mande uma mensagem ou venha nos visitar.
                 </p>
-            </address>
-            <form action="#">
-                <label for="nome">Nome completo:</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-                <br><br>
-                <label for="email">E-mail</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
-                <br>
-                <label for="departamento">departamento</label>
-                <br>
-                <select name="departamento" id="departamento">
-                    <option value="vendas">Vendas</option>
-                    <option value="suporte">Suporte tectico</option>
-                    <option value="financeiro">financeiro</option>
-                    <option value="sugestao">Sugestôes</option>
-                </select>
-                <br><br>
-                <label for="mensagem">Mensagem</label>]
-                <br>
-                <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite sua mensagem"></textarea>
-                <br><br>
-                <button type="submit">enviar mensagem</button>
-            </form>
+                <address style="text-align: center; margin-bottom: 2rem; font-style: normal;">
+                    <p>
+                        Loja fisica: <strong>Centro Historico,Cuiaba-MT</strong>
+                    </p>
+                </address>
+                <form action="#">
+                    <label for="nome" style="font-weight: bold;">Nome completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                    <label for="email" style="font-weight: bold;">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                    <label for="departamento" style="font-weight: bold;">departamento</label>
+                    <select name="departamento" id="departamento" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                        <option value="vendas">Vendas</option>
+                        <option value="suporte">Suporte tectico</option>
+                        <option value="financeiro">financeiro</option>
+                        <option value="sugestao">Sugestôes</option>
+                    </select>
+                    <label for="mensagem" style="font-weight: bold;">Mensagem</label>]
+                    <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite sua mensagem" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"></textarea>
+                    <button type="submit" class="botaoPrincipal" style="width: 100%; border: none; cursor: pointer;">enviar mensagem</button>
+                </form>
+            </div>
         </section>
     </main>
     <!--rodapé do site-->
-    <footer>
-        <div>
-            <h2>compasso musical</h2>
+    <footer id="footer" class="rodape">
+        <div style="flex: 1; min-height: 250px;">
+            <h2 class="titulo">compasso musical</h2>
             <p>
                 Desde 2026 conectando pessoas atravez da musica.
             </p>
         </div>
 
-        <nav>
-            <h3>mapa do site</h3>
-            <ul>
+        <nav style="flex: 1; min-height: 150px;">
+            <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block; ">mapa do site</h3>
+            <ul style="margin-top: 1rem; line-height: 2;">
                 <li>
                     <a href="#hero" class="linknav">Inicio</a>
                 </li>
@@ -313,23 +323,23 @@
         </nav>
 
         <nav>
-            <h3>informaçãoes</h3>
-            <ul>
+            <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">informaçãoes</h3>
+            <ul style="margin-top: 1rem; line-height: 2;">
                 <li>
-                    <a href="">termos de uso</a>
+                    <a href="#" class="linknav">termos de uso</a>
                 </li>
                 <li>
-                    <a href="">politica de privacidade</a>
+                    <a href="#" class="linknav">politica de privacidade</a>
                 </li>
                 <li>
-                    <a href="">trocas e devoluçoes</a>
+                    <a href="#" class="linknav">trocas e devoluçoes</a>
                 </li>
             </ul>
         </nav>
 
-        <div>
-            <h3>Siga-nos</h3>
-            <div>
+        <div style="flex: 1; min-height: 250 px;">
+            <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">Siga-nos</h3>
+            <div style="flex: 1; min-height: 250 px;">
                 <a href="">
                     <img src="instagram png.png" alt="instagram" width="100" height="100">
                 </a>
@@ -343,17 +353,17 @@
         </div>
 
         <div>
-            <h3>newsletter</h3>
+            <h3 style="border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem; display: inline-block;">newsletter</h3>
             <p>
                 receba promoçãoes exclusivas no seu email
             </p>
-            <form action="">
-                <input type="email" name="email" id="email" placeholder="digite seu email">
-                <button type="submit">assinar</button>
+            <form action="" style="display: flex; margin-top: 1rem;">
+                <input type="email" name="email" id="email" placeholder="digite seu email" style="margin-top: 0; border-radius: 0 4px 4px 0; padding: 0.8rem; outline: none; width: 70%;">
+                <button type="submit" class="botaoPrincipal" style="margin-top: 0; border-radius: 0 4px 4px 0; border: none; cursor: pointer;">assinar</button>
             </form>
         </div>
 
-        <div>
+        <div style="width: 100%; text-align: center; margin-top: 2rem; border-top: 1px solid #333333; padding-top: 1rem;">
             <p>
                 copyright &copy; 2026 compasso musical - todos os direitos reservados. site desenvolve por vitor bonitão
             </p>
